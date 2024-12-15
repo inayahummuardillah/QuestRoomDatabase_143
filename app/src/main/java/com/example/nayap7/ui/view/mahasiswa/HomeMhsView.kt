@@ -75,7 +75,7 @@ fun HomeMhsView (
             }
         }
     ) { innerPadding ->
-        val homeUiState by viewModel.homeUIState.collectAsState()
+        val homeUiState by viewModel.homeUiState.collectAsState()
 
         BodyHomeMhsView(
             homeUiState = homeUiState,
