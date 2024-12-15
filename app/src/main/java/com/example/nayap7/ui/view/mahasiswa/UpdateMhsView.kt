@@ -31,7 +31,7 @@ fun UpdateMhsView(
     viewModel: UpdateMhsViewModel = viewModel(factory = PenyediaViewModel.Factory)
 
 ) {
-    val uiState = viewModel.updateUiState
+    val uiState = viewModel.updateUIState
     val snackbarHostState = remember { SnackbarHostState() }
     val coroutineScope = rememberCoroutineScope()
 
@@ -75,7 +75,7 @@ fun UpdateMhsView(
                 },
                 onClick = {
                     coroutineScope.launch {
-                        if (viewModel.validateStae()) {
+                        if (viewModel.validateFields()) {
                             viewModel.updateData()
                             delay(500)
                             withContext(Dispatchers.Main) {
