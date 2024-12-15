@@ -2,6 +2,7 @@ package com.example.nayap7.dependenciesinjection
 
 import android.content.Context
 import com.example.nayap7.data.database.KrsDatabase
+import com.example.nayap7.repository.LocalRepositoryMhs
 import com.example.nayap7.repository.RepositoryMhs
 
 interface InterfaceContainerApp{
